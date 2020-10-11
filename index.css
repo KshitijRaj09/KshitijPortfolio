@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Hind&family=Noto+Sans+JP:wght@500&display=swap&family=Satisfy&display=swap');
+
+:root {
+    --backgroundColor: rgb(199, 231, 254);
+    --backgroundColorGradient: linear-gradient(180deg, rgba(199, 231, 254, 1) 0%, rgba(126, 147, 140, 1) 100%);
+    --backgroundColorNight: #a28089;
+    --headingColor: #213e3b;
+    --borderColorHover: #f6f5f5;
+    --darkTextColor: #12100E;
+}
+
+*{
+    scroll-behavior: smooth;
+    transition: 0.2s;
+}
+
+/*..................Tag Selector........................*/
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Charmonman', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hind', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkTextColor);
+
+}
+
+/*......................Tag Selector.......................*/
+
+/*...........First Container..................................*/
+.top-container {
+    padding-top: 1px;
+    color: var(--darkTextColor);
+    background: var(--backgroundColor);
+    background: var(--backgroundColorGradient);
+    font-family: 'Hind', sans-serif;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: center;
+    min-width: 300px;
+}
+
+.contact{
+    font-family: 'Satisfy', cursive ;
+    font-size: 1.2rem;
+    margin:0;
+    text-transform: uppercase;
+}
+
+.contact:hover{
+    font-size:1.3rem;
+}
+
+.moving-bee {
+    position: absolute;
+    left: 40%;
+    top: 1%;
+    display: inline-block;
+}
+
+.theme-options {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Satisfy', cursive;
+    text-transform: uppercase;
+}
+
+
+
+.theme-1 {
+    background-color: var(--backgroundColorNight);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--darkTextColor);
+    
+}
+
+.theme-1:hover {
+    border: 2px solid var(--borderColorHover);
+    transform: scale(1.05);
+}
+
+.section-2 {
+    display: grid;
+    width: 80%;
+    min-width: 300px;
+    min-height: 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro my-picture";
+    margin: 0 auto;
+    margin-top: 50px;
+    word-spacing: 1px;
+
+
+}
+
+.intro {
+    grid-area: intro;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-width: 300px;
+    word-wrap: break-word;
+    padding-left: 40px;
+
+}
+
+.intro h1 {
+    font-family: 'Charmonman', cursive;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.intro p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.07em;
+    margin: 7px;
+    text-align: center;
+}
+
+P,
+h1 {
+    text-align: center;
+    display: inline;
+}
+
+.my-picture {
+    grid-area: my-picture;
+    margin-right: 5px;
+    padding: 20px 0;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.my-profile-picture {
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1.2px solid var(--borderColorHover) ;
+}
+
+.my-profile-picture:hover{
+    border-width: 2.2px;
+}
+
+
+
+
+.middle-container{
+    background-color: #f9f9ff;
+    padding:20px 0;
+}
+
+.section-3 {
+    display: grid;
+    width: 80%;
+    min-width: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "know-about-me skills";
+    margin: 0 auto;
+    color: black;
+    grid-column-gap: 60px;
+    
+
+}
+
+.know-about-me {
+    grid-area: know-about-me;
+    text-align: justify;
+    padding:5px 7px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid rgb(230, 228, 228);
+   
+}
+
+.know-about-me>p {
+    overflow-wrap: break-word;
+}
+
+.know-about-me:hover, .skills:hover{
+    border-width: 2px;
+    transform: scale(1.05);
+}
+
+.skills {
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "skills-1 skills-2";
+    border: 1px solid rgb(230, 228, 228);
+    
+    padding:5px 7px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    
+}
+
+.skills-1 {
+    grid-area: skills-1;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.skills-2 {
+    grid-area: skills-2;
+}
+
+
+.third-container {
+    color: white;
+    min-height: 400px;
+
+    background-color: #f9f9ff;
+    padding:20px 0;
+}
+
+.my-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "some-project some-project""project-1 project-2";
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    grid-column-gap: 60px;
+    color: black;
+}
+
+.some-project {
+    grid-area: some-project;
+    display: grid;
+    justify-content: center;
+    margin:20px auto 0;
+}
+
+.my-projects h4{
+    text-align: center;
+}
+
+.project-1 {
+    grid-area: project-1;
+    margin-top: 10px;
+    background-color:#e6e8f5;
+    border-radius: 15px;
+    padding:5px 7px;
+}
+
+
+.project-2 {
+    grid-area: project-2;
+    margin-top: 10px;
+    background-color: #e6e8f5;
+    border-radius: 15px;
+    padding:5px 7px;
+}
+
+
+.my-projects img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.contact-me {
+    background-color: #cedebd;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.message {
+    padding: 10px 0 30px;
+}
+
+.link-profile {
+    padding: 5px 0 10px;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #7fb9e0;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #2da5f0;
+    text-decoration: none;
+}
+
+
+#h4-msg {
+    display: block;
+    height: 30px;
+    font-size: 20px;
+}
+
+.last-image {
+    width: 40px;
+    height: 40px;
+}
+
+.link-profile a {
+    margin: 10px;
+}
+
+
+
+.bottom-image {
+    text-align: center;
+    background-color: #cedebd;
+}
+
+#img-bottom {}
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+    .section-2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro""my-picture";
+        height: 600px;
+    }
+
+    .my-profile-picture {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        padding-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width:950px) {
+
+    .moving-bee {
+        display: none;
+    }
+}
