@@ -353,24 +353,52 @@ ul {
     .section-2 {
         grid-template-columns: 1fr;
         grid-template-areas: "intro""my-picture";
-        height: 600px;
+        min-height: 650px;
+        width:90%;
     }
 
     .my-profile-picture {
         width: 80%;
         margin: 0 auto;
+        
     }
 
     .intro {
         padding-left: 0;
     }
 
+    .section-3 {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "know-about-me" "skills";
+        grid-row-gap: 40px;
+    }
+
+    .my-projects {
+        grid-template-columns: 1fr;
+        grid-template-areas: "some-project"
+        "project-1" "project-2";
+        width: 80%;
+        min-width: 300px;
+        margin: 0 auto;
+        grid-row-gap: 10px;
+        color: black;
+    }
 
 }
 
 @media screen and (max-width:950px) {
 
-    .moving-bee {
-        display: none;
+    .moving-bee{
+        width:100%;
+        height:100%;
+        top:1%;
+        left:20%;
+    }
+    .bottom-image{
+        width:100%;
+    }
+    #img-bottom{
+        width:100%;
     }
 }
